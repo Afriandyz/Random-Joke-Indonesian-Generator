@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Indonesian Joke</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily: {
+                'mons' : '"Montserrat", sans-serif'
+            },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-200 font-mons">
+
+    <!-- Cards Container -->
+    <section class="container mx-auto px-3 py-4 h-screen flex items-center justify-center">
+        <div class="cards bg-white flex flex-col items-center p-3 rounded-md shadow-md">
+            <h1 class="text-2xl mb-4 text-center">Random Joke Indonesian Generator</h1>
+            <p class="mb-4 text-center transition-all" id="result"></p>
+            <button class="bg-black text-white px-4 rounded-md hover:bg-slate-300 hover:text-black transition-all duration-200 ease-in-out outline-none" id="button">Generate Joke</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
